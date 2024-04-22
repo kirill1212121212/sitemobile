@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/ANNI-LANDING/src2/css/js/normalize.css" />
+    <link rel="stylesheet" href="/ANNI-LANDING/src2/css/js/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="geo">
+                    <li class="geo-item">
+                        <a class="geo-link" href="#">Центральный</a>
+                    </li>
+                </ul>
+                <ul class="geo-2">
+                    <li class="geo-item-2">
+                        <a class="geo-link-2" href="#">г.Тюмень</a>
+                    </li>
+                    <li class="geo-item-2">
+                        <a class="geo-link-2" href="#">Мельникайте</a>
+                    </li>
+                    <li class="geo-item-2">
+                        <a class="geo-link-2" href="#">д.70</a>
+                    </li>
+                </ul>
+                <a href="#" class="exit">
+                    <img class="exit-img" src="/ANNI-LANDING/src2/css/js/image/Group 370.svg" alt="выйти">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="headline">
+            <div class="container">
+                    <img class="headline-img" src="/ANNI-LANDING/src2/css/js/image/за день 12.svg" alt="за день">
+                    <img class="headline-img1" src="/ANNI-LANDING/src2/css/js/image/заработок1.svg" alt="Заработок">
+                <h1 class="title">за день</h1>
+                <ul class="dropdown-menu">
+                    <li><a href="#">месяц</a></li>
+                    <li><a href="#">год</a></li>
+                </ul>
+            </div>
+        </section>
+        <container-4>
+            <div class="graphic">
+                <canvas id="myChart1" width="283" height="165"></canvas>
+                <img class="fonschedule" src="/ANNI-LANDING/src2/css/js/image/Rectangle 57.svg" alt="schedule">
+            </div>
+        </container-4>
+        <div class="container-3">
+            <div class="gost">
+                <a href="#"><img class="cnop3" src="/ANNI-LANDING/src2/css/js/image/4cube.svg" alt="гости">
+                <a href="#"><img class="cnop4" src="/ANNI-LANDING/src2/css/js/image/4cube.svg" alt="гости">
+
+            </div>
+            <div class="gost2">
+                <a href="#"><img class="cnop1" src="/ANNI-LANDING/src2/css/js/image/4cube.svg" alt="гости">
+
+                <a href="#"><img class="cnop2" src="/ANNI-LANDING/src2/css/js/image/4cube.svg" alt="гости"><p class="micro3">Гости</p></a>
+
+            </div>
+        </div>
+        <div class="graphic2">
+            <canvas id="myChart2" width="159px" height="159"></canvas>
+            <img class="fonschedule2" src="/ANNI-LANDING/src2/css/js/image/Rectangle 57.svg" alt="schedule">
+        </div>
+
+
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/ANNI-LANDING/src2/css/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('myChart1');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['янв', 'фев', 'мар', 'апр', 'май', 'июн'],
+        datasets: [{
+          label: 'График посещаемости',
+          borderWidth: 1,
+          data: [12, 19, 3, 5, 2, 3],
+          backgroundColor: [
+            'rgba(249, 176, 123, 0.8)',
+            'rgba(255, 133, 45, 0.8)',
+            'rgba(249, 176, 123, 0.8)',
+            'rgba(255, 133, 45, 0.8)',
+            'rgba(249, 176, 123, 0.8)',
+            'rgba(255, 133, 45, 0.8)',
+          ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <script>
+    const ctx2 = document.getElementById('myChart2');
+  
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        labels: ['янв', 'фев'],
+        datasets: [{
+          label: 'График посещаемости',
+          borderWidth: 1,
+          data: [70, 30],
+          backgroundColor: [
+            'rgba(249, 176, 123, 0.8)',
+            'rgba(255, 133, 45, 0.8)',
+          ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</script>
+</html>

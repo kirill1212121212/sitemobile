@@ -1,0 +1,196 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header {
+  background-color: white;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 31px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.exit {
+  position: absolute;
+  top: 20px;
+  right: 31px;
+  box-sizing: border-box;
+}
+
+
+.geo-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.geo-item .geo-link {
+  margin-bottom: 5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 20px;
+  color: #282828;
+}
+
+.geo-2 .montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+.geo-2 {
+  display: flex;
+  overflow-wrap: break-word;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 13px;
+  color: #282828;
+}
+
+.headline {
+
+  padding: 12px 0 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.headline-img {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  z-index: -1;
+}
+
+.headline-img1 {
+  position: absolute;
+  top: 70px;
+  left: 31px;
+  z-index: -2;
+
+}
+.dropdown-menu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 20px;
+    display: none;
+    transition: opacity 0.5s;
+    
+    position: absolute;
+    background: #f9b07b;
+    padding: 26.5px;
+    margin-left: 219px;
+    margin-top: -6px
+    
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.title {
+  margin-left: 225px;
+  margin-top: -25px;
+  display: flex;
+justify-content: flex-end;
+font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.gost {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  margin-top: -550px;
+}
+.gost2 {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+/* Стилизация текста */
+.micro, .micro1 .micro2, .micro3 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fonschedule {
+  display: block;
+  margin-left: -27px;
+  margin-top: -10px;
+  z-index: -10;
+  position: relative;
+}
+
+.graphic {
+  z-index: 10;
+  width: 283px;
+  height: 165px;
+  margin-left: 48.5px;
+  margin-top: 460px;
+  position: relative;
+}
+
+#myChart1 {
+  margin-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.fonschedule2 {
+  display: block;
+  margin-left: -27px;
+  margin-top: -10px;
+  z-index: -10;
+  position: relative;
+}
+
+.graphic2 {
+  z-index: 10;
+  width: 283px;
+  height: 165px;
+  margin-left: 48.5px;
+  margin-top: 460px;
+  position: relative;
+}
+
+#myChart2 {
+  margin-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
